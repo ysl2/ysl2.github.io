@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>Hexo站内文章链接</title>
+    <url>/posts/d0ffdcbb/</url>
+    <content><![CDATA[<p>此文章来源于Hexo官方中文文档：<a href="https://hexo.io/zh-cn/docs/tag-plugins">https://hexo.io/zh-cn/docs/tag-plugins</a></p>
+<h2 id="引用文章"><a href="#引用文章" class="headerlink" title="引用文章"></a>引用文章</h2><p>引用其他文章的链接。</p>
+<figure class="highlight clojure"><table><tr><td class="code"><pre><span class="line">&#123;% post_path filename %&#125;</span><br><span class="line">&#123;% post_link filename [title] [escape] %&#125;</span><br></pre></td></tr></table></figure>
+<p>在使用此标签时可以忽略文章文件所在的路径或者文章的永久链接信息、如语言、日期。</p>
+<p>例如，在文章中使用 <code>&#123;% post_link how-to-bake-a-cake %&#125;</code> 时，只需有一个名为 <code>how-to-bake-a-cake.md</code> 的文章文件即可。即使这个文件位于站点文件夹的 <code>source/posts/2015-02-my-family-holiday</code> 目录下、或者文章的永久链接是 <code>2018/en/how-to-bake-a-cake</code>，都没有影响。</p>
+<a id="more"></a>
+<p>默认链接文字是文章的标题，你也可以自定义要显示的文本。此时不应该使用 Markdown 语法 <code>[]()</code>。</p>
+<p>默认对文章的标题和自定义标题里的特殊字符进行转义。可以使用<code>escape</code>选项，禁止对特殊字符进行转义。</p>
+<p><strong>链接使用文章的标题</strong></p>
+<figure class="highlight django"><table><tr><td class="code"><pre><span class="line"><span class="template-tag">&#123;% <span class="name">post_link</span> hexo-3-8-released %&#125;</span></span><br></pre></td></tr></table></figure>
+<p><a href="https://hexo.io/news/2018/10/19/hexo-3-8-released/">Hexo 3.8.0 Released</a></p>
+<p><strong>链接使用自定义文字</strong></p>
+<figure class="highlight django"><table><tr><td class="code"><pre><span class="line"><span class="template-tag">&#123;% <span class="name">post_link</span> hexo-3-8-released &#x27;通往文章的链接&#x27; %&#125;</span></span><br></pre></td></tr></table></figure>
+<p><a href="https://hexo.io/news/2018/10/19/hexo-3-8-released/">通往文章的链接</a></p>
+<p><strong>对标题的特殊字符进行转义</strong></p>
+<figure class="highlight crmsh"><table><tr><td class="code"><pre><span class="line">&#123;% post_link hexo-<span class="number">4</span>-released &#x27;How to use <span class="tag">&lt;b&gt;</span> <span class="keyword">tag</span> <span class="title">in</span> title&#x27; %&#125;</span><br></pre></td></tr></table></figure>
+<p><a href="https://hexo.io/news/2019/10/14/hexo-4-released/">How to use  tag in title</a></p>
+<p><strong>禁止对标题的特殊字符进行转义</strong></p>
+<figure class="highlight actionscript"><table><tr><td class="code"><pre><span class="line">&#123;% post_link hexo<span class="number">-4</span>-released <span class="string">&#x27;&lt;b&gt;bold&lt;/b&gt; custom title&#x27;</span> <span class="literal">false</span> %&#125;</span><br></pre></td></tr></table></figure>
+<p><a href="https://hexo.io/news/2019/10/14/hexo-4-released/"><strong>bold</strong> custom title</a></p>
+<hr>
+<p>我练习一下：</p>
+<a href="/posts/31e84e83/" title="我的小破站">我的小破站</a>
+<a href="/posts/31e84e83/" title="小破站">小破站</a>
+<a href="#">Post not found: aabbs somethings</a>
+<p><a href="http://www.ajajsdjadhfgahasjdjasjdasjfjsjdkhfgksjdhfkasdhfdfasdfh.com">asjdj</a></p>
+<figure class="highlight django"><table><tr><td class="code"><pre><span class="line"><span class="template-tag">&#123;% <span class="name">post_link</span> 我的小破站 %&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="template-tag">&#123;% <span class="name">post_link</span> 我的小破站 &#x27;小破站&#x27; %&#125;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight arduino"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(<span class="keyword">String</span>[] ags)</span></span></span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>Hexo问题</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hexo博客美化</title>
+    <url>/posts/1d0133b7/</url>
+    <content><![CDATA[<p>hexo配置文档：<a href="http://theme-next.iissnan.com/third-party-services.html">http://theme-next.iissnan.com/third-party-services.html</a></p>
+<p><a href="https://aoenian.github.io/2018/08/06/next-theme-customized-1/">https://aoenian.github.io/2018/08/06/next-theme-customized-1/</a></p>
+<p>比如行内代码背景加深</p>
+<p>make update “empty”<br>close article update<br>test changyan comment platform<br>test valine<br>test gitee deploy4<br>test renew<br>text sidebar my-notes</p>
+<p>测试一下代码块高亮</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span> <span class="title">Linklist</span> &#123;</span></span><br><span class="line">    <span class="keyword">int</span> a;</span><br><span class="line">    <span class="keyword">char</span> s;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;hello world!\n&quot;</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<script type="math/tex; mode=display">
+c^2 = a^2 + b^2</script><p>行内公式 $c^2$ 行内公式</p>
+<a id="more"></a>
+<p>过渡到新版本：</p>
+<p>hexo官方文档：<br><a href="https://theme-next.js.org/docs/getting-started/configuration.html">https://theme-next.js.org/docs/getting-started/configuration.html</a></p>
+<p>新版仓库的中文discuss：<a href="https://github.com/next-theme/hexo-theme-next/issues/4">https://github.com/next-theme/hexo-theme-next/issues/4</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>Hexo加载本地图片</title>
+    <url>/posts/56cd5f86/</url>
+    <content><![CDATA[<blockquote>
+<p>原链接：<a href="https://www.jianshu.com/p/f72aaad7b852">https://www.jianshu.com/p/f72aaad7b852</a><br>我自己的补充：原链接内容有错误，我又在此基础上改正了一下<br>我自己引用的链接：<a href="https://blog.csdn.net/Strong997/article/details/97767929">https://blog.csdn.net/Strong997/article/details/97767929</a></p>
+</blockquote>
+<p>菜鸟一枚，插入图片的时候走了不少弯路，写篇blog记录一下。</p>
+<p>第一步：安装插件，在hexo根目录打开Git Bash,执行</p>
+<a id="more"></a>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">// npm install hexo-asset-image --save</span><br><span class="line"></span><br><span class="line">我自己的改正：上面的不对，用下面这个：</span><br><span class="line">npm install https://github.com/CodeFalling/hexo-asset-image --save</span><br></pre></td></tr></table></figure>
+<p>第二步：打开hexo的配置文件<code>_config.yml</code></p>
+<p>找到 <code>post_asset_folder</code>，把这个选项从<code>false</code>改成<code>true</code></p>
+<p>我自己的补充：把<code>relative_link</code>字段也改成<code>true</code></p>
+<p>第三步：更换<code>index.js</code>的代码</p>
+<p>我自己的补充：不需要更换代码</p>
+<p>第四步：现在就可以插入图片了，比如<code>hexo new post photo</code>之后<br>就在<code>source/_posts</code>生成<code>photo.md</code>文件和<code>photo</code>文件夹，我们把要插入的图片复制到<code>photo</code>文件夹内，<br>在<code>photo.md</code>文件里面按<code>markdown</code>的标准写,（我的文件名是<code>head.jpeg</code>）比如</p>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">![这是代替图片的文字，随便写](2020-11-29-19-02-04.png)</span><br></pre></td></tr></table></figure>
+<p>我自己的补充：注意不要有中文，并且如果改了文章文件名，同名的附件文件夹也要改成相同的名字</p>
+<p>然后就……完事了。</p>
+<p><img src="/posts/56cd5f86/2020-11-29-19-40-25.png" alt="picture7"></p>
+<p><img src="/posts/56cd5f86/2020-11-29-20-59-33.png" alt="picture5"></p>
+<p>参考链接：</p>
+<ul>
+<li><a href="https://blog.csdn.net/xjm850552586/article/details/84101345">https://blog.csdn.net/xjm850552586/article/details/84101345</a></li>
+<li><a href="https://blog.csdn.net/qq_38148394/article/details/79997971">https://blog.csdn.net/qq_38148394/article/details/79997971</a></li>
+</ul>
+]]></content>
+  </entry>
+  <entry>
+    <title>判断微分方程的类型（Java伪代码表示）</title>
+    <url>/posts/d6882305/</url>
+    <content><![CDATA[<p>由于微分方程有很多种类，在做题时需要快速判别。因此我整理了一下分类，有助于自己理解。</p>
+<p>只是伪代码表示，如果直接在电脑上运行，肯定是没法运行的。</p>
+<a id="more"></a>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> 计算微分方程的解 </span>&#123;</span><br><span class="line">	<span class="keyword">private</span> 计算微分方程的解() &#123;&#125;</span><br><span class="line">	<span class="comment">/**</span></span><br><span class="line"><span class="comment">	 * 判断微分方程类型的方法，返回微分方程的类型</span></span><br><span class="line"><span class="comment">	 * </span></span><br><span class="line"><span class="comment">	 * <span class="doctag">@param</span> 方程: 待判断的微分方程</span></span><br><span class="line"><span class="comment">	 * <span class="doctag">@return</span> 微分方程的种类</span></span><br><span class="line"><span class="comment">	 */</span></span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> String 判断微分方程类型(微分方程 方程) &#123;</span><br><span class="line">        <span class="comment">//对于一阶方程：</span></span><br><span class="line">		<span class="keyword">if</span> (方程.阶数 &lt;= <span class="number">1</span>) &#123;</span><br><span class="line">             <span class="comment">//第一种</span></span><br><span class="line">			<span class="keyword">if</span>(方程.is(<span class="string">&quot;可因式分解&quot;</span>)) &#123;</span><br><span class="line">				<span class="keyword">return</span> <span class="string">&quot;可分离变量型，分离变量后两边积分&quot;</span>;</span><br><span class="line">			&#125;</span><br><span class="line">             <span class="comment">//第二种</span></span><br><span class="line">			<span class="keyword">if</span> (方程.is(<span class="string">&quot;可化为φ(y/x)形式&quot;</span>)) &#123;</span><br><span class="line">				<span class="keyword">return</span> <span class="string">&quot;齐次型，带公式&quot;</span>;</span><br><span class="line">			&#125;</span><br><span class="line">             <span class="comment">//剩下的就都是线性的了；y&#x27; + b(x)*y = c(x)，包括齐次与非齐次两种</span></span><br><span class="line">             <span class="comment">//第三种</span></span><br><span class="line">			<span class="keyword">if</span> (方程.c(x).equals(<span class="string">&quot;0&quot;</span>)) &#123;</span><br><span class="line">				<span class="keyword">return</span> <span class="string">&quot;一阶线性齐次型，带公式&quot;</span>;</span><br><span class="line">			&#125;</span><br><span class="line">             <span class="comment">//第四种</span></span><br><span class="line">             <span class="comment">//去掉线性齐次后，剩下的都是线性非齐次。即Q(x) != 0</span></span><br><span class="line">             System.out.println(<span class="string">&quot;非齐次型方程的通解 = 对应的齐次的通解 + 非齐次的特解&quot;</span>);</span><br><span class="line">             <span class="comment">//上述是线性微分方程的解的“叠加原理”。不仅一阶，高阶的也具有此特点</span></span><br><span class="line">             <span class="keyword">return</span> <span class="string">&quot;一阶线性非齐次型，带公式&quot;</span>;</span><br><span class="line">		&#125;</span><br><span class="line">        <span class="comment">//除了一阶方程，剩下的都是高阶方程</span></span><br><span class="line">        </span><br><span class="line">        <span class="comment">//对于可降阶的高阶，有三种情况：</span></span><br><span class="line">        <span class="comment">//情况1</span></span><br><span class="line">        <span class="keyword">if</span>(方程.is(<span class="string">&quot;f(x, y^(n)) = 0 类型&quot;</span>)) &#123;</span><br><span class="line">            System.out.println(<span class="string">&quot;只有y^(n)，没有y&#x27;和y&quot;</span>);</span><br><span class="line">            <span class="keyword">return</span> <span class="string">&quot;第一种可降阶，连续积分&quot;</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//情况2</span></span><br><span class="line">        <span class="keyword">if</span>(方程.is(<span class="string">&quot;f(x, y&#x27;, y&#x27;&#x27;) = 0 类型&quot;</span>)) &#123;</span><br><span class="line">            System.out.println(<span class="string">&quot;有x, y&#x27;和y&#x27;&#x27;，但是缺y&quot;</span>);</span><br><span class="line">            <span class="keyword">return</span> <span class="string">&quot;第二种可降阶，令y&#x27; = p 降阶，&quot;</span> + </span><br><span class="line">                <span class="string">&quot;会变成一阶线性齐次方程。带公式。如果有必要的话，再降阶一次&quot;</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//情况3</span></span><br><span class="line">        <span class="keyword">if</span>(方程.is(<span class="string">&quot;f(y, y&#x27;, y&#x27;&#x27;) = 0 类型&quot;</span>)) &#123;</span><br><span class="line">            System.out.println(<span class="string">&quot;有y, y&#x27;和y&#x27;&#x27;，但是缺x（没有单独出现x）&quot;</span>);</span><br><span class="line">            <span class="keyword">return</span> <span class="string">&quot;第三种可降阶，令y&#x27; = p, y&#x27;&#x27; = p*(dp/dy) 降阶，&quot;</span> + </span><br><span class="line">                <span class="string">&quot;会变成一阶线性齐次方程。带公式。如果有必要的话，再降阶一次&quot;</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        <span class="comment">//剩下的就是线性的高阶方程</span></span><br><span class="line">        <span class="comment">//对于二阶线性方程，由于更常见，因此单独研究</span></span><br><span class="line">        <span class="comment">//二阶往上的线性方程，原理是类似的，因此没有在算法中列出（三阶常系数线性）</span></span><br><span class="line">        <span class="comment">//二阶线性形如：y&#x27;&#x27; + a(x)*y&#x27; + b(x)*y = c(x)，分为常系数和变系数</span></span><br><span class="line">        <span class="keyword">if</span>(方程.阶数 == <span class="number">2</span>) &#123;</span><br><span class="line">            <span class="comment">//判断是否是线性常系数的</span></span><br><span class="line">            <span class="keyword">if</span>(方程.a(x).equals(<span class="string">&quot;0&quot;</span>) &amp;&amp; 方程.b(x).equals(<span class="string">&quot;0&quot;</span>)) &#123;	<span class="comment">//是线性常系数的</span></span><br><span class="line">                <span class="comment">//判断是否是线性常系数齐次</span></span><br><span class="line">                <span class="keyword">if</span>(方程.c(x).equals(<span class="string">&quot;0&quot;</span>)) &#123;	<span class="comment">//是齐次的</span></span><br><span class="line">                    <span class="comment">//对于齐次线性，只要找到两个线性无关的特解，即可通过公式得到通解</span></span><br><span class="line">                    Expression 二阶特征方程 = 方程.获取对应的特征方程();</span><br><span class="line">                    <span class="keyword">switch</span>(二阶特征方程.根的情况) &#123;	<span class="comment">//可通过求△delta判断</span></span><br><span class="line">                        <span class="keyword">case</span> <span class="string">&quot;λ1 != λ2&quot;</span>:	<span class="comment">//两个不相等的实根</span></span><br><span class="line">                            <span class="keyword">return</span> <span class="string">&quot;带二阶公式：两个不相等的根的通解公式&quot;</span>;</span><br><span class="line">                        <span class="keyword">case</span> <span class="string">&quot;λ1 == λ2&quot;</span>:	<span class="comment">//两个相等的实根</span></span><br><span class="line">                            <span class="keyword">return</span> <span class="string">&quot;带二阶公式：两个相等的根的通解公式&quot;</span>;</span><br><span class="line">                        <span class="keyword">case</span> <span class="string">&quot;λ1, λ2共轭&quot;</span>:	<span class="comment">//两个共轭的根</span></span><br><span class="line">                            <span class="keyword">return</span> <span class="string">&quot;带二阶公式：两个共轭的根的通解公式&quot;</span>;</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="comment">//剩下的就是非齐次的</span></span><br><span class="line">                <span class="comment">//非齐次的c(x)被人为规定了两种情况:（如果不人为规定，特解非常难找）</span></span><br><span class="line">                <span class="comment">//c(x) = P_n(x)*e^(k*x)或者c(x) = (e^(α*x))*(P(x)*cos(β*x) + Q(x)*sin(β*x))</span></span><br><span class="line">                <span class="comment">//第一种情况</span></span><br><span class="line">                <span class="keyword">if</span>(方程.c(x).equals(<span class="string">&quot;P_n(x)*e^(k*x)&quot;</span>)) &#123;</span><br><span class="line">                    System.out.println(<span class="string">&quot;非齐次型方程的通解 = 对应的齐次的通解 + 非齐次的特解&quot;</span>);</span><br><span class="line">                    StringBuilder s = <span class="keyword">new</span> StringBuilder(<span class="string">&quot;先求对应的齐次的通解，并记录方程的根λ1, λ2&quot;</span>);</span><br><span class="line">                    <span class="comment">//根据多项式P_n(x)的阶数构建新的多项式exp</span></span><br><span class="line">                    <span class="comment">//比如，</span></span><br><span class="line">                    <span class="comment">//P_n(x)的阶数是0，构建的多项式就是a</span></span><br><span class="line">                    <span class="comment">//P_n(x)的阶数是1，构建的多项式就是a*x + b</span></span><br><span class="line">                    <span class="comment">//P_n(x)的阶数是2，构建的多项式就是a*(x^2) + b*x + c</span></span><br><span class="line">                    <span class="comment">//...</span></span><br><span class="line">                    Expression exp = Expression.构建多项式(P_n(x).阶数);</span><br><span class="line">                    <span class="comment">//如果两个根都不等于k</span></span><br><span class="line">                    <span class="keyword">if</span> (c(x).k != λ<span class="number">1</span> &amp;&amp; c(x).k != λ<span class="number">2</span>) &#123;</span><br><span class="line">                        String y_0 = <span class="string">&quot;(exp)*e^(k*x)&quot;</span>;</span><br><span class="line">                        s.append(String.format(</span><br><span class="line">                            <span class="string">&quot;然后令y_0(x) = %s带回，解出a和b，得到非齐次特解，合起来就是通解&quot;</span>, y_0));</span><br><span class="line">                        <span class="keyword">return</span> s.toString();</span><br><span class="line">                    &#125;</span><br><span class="line">                    <span class="comment">//如果两个根都等于k</span></span><br><span class="line">                    <span class="keyword">if</span> (c(x).k == λ<span class="number">1</span> &amp;&amp; c(x).k == λ<span class="number">2</span>) &#123;</span><br><span class="line">                        String y_0 = <span class="string">&quot;(x^2)*(exp)*e^(k*x)&quot;</span>; <span class="comment">//注意最前面多了一个x^2</span></span><br><span class="line">                        s.append(String.format(</span><br><span class="line">                            <span class="string">&quot;然后令y_0(x) = %s带回，解出a和b，得到非齐次特解，合起来就是通解&quot;</span>, y_0));</span><br><span class="line">                        <span class="keyword">return</span> s.toString();</span><br><span class="line">                    &#125;</span><br><span class="line">                    <span class="comment">//剩下的就是两个根只有一个等于k</span></span><br><span class="line">                    String y_0 = <span class="string">&quot;x*(exp)*e^(k*x)&quot;</span>;	<span class="comment">//注意最前面多了一个x</span></span><br><span class="line">                    s.append(String.format(</span><br><span class="line">                        <span class="string">&quot;然后令y_0(x) = %s带回，解出a和b，得到非齐次特解，合起来就是通解&quot;</span>, y_0));</span><br><span class="line">                    <span class="keyword">return</span> s.toString();</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="comment">//第二种情况</span></span><br><span class="line">                <span class="keyword">if</span>(方程.c(x).equals(<span class="string">&quot;(e^(α*x))*(P(x)*cos(β*x) + Q(x)*sin(β*x))&quot;</span>)) &#123;</span><br><span class="line">                    System.out.println(<span class="string">&quot;非齐次型方程的通解 = 对应的齐次的通解 + 非齐次的特解&quot;</span>);</span><br><span class="line">                    StringBuilder s = <span class="keyword">new</span> StringBuilder(<span class="string">&quot;先求对应的齐次的通解，并记录方程的根λ1, λ2&quot;</span>);</span><br><span class="line">                    <span class="comment">//根据多项式P(x)与Q(x)二者中的最高阶数构建新的多项式e1, e2</span></span><br><span class="line">                    <span class="comment">//注意：（1）取二者阶数较高的作为新多项式的阶数。（2）两个多项式的字母不同。</span></span><br><span class="line">                    <span class="comment">//比如，</span></span><br><span class="line">                    <span class="comment">//P(x)的阶数是0，构建的多项式e1就是a，e2就是b</span></span><br><span class="line">                    <span class="comment">//P(x)的阶数是1，构建的多项式e1就是a*x + b，e2就是c*x + d</span></span><br><span class="line">                    <span class="comment">//P(x)的阶数是2，构建的多项式e1就是a*(x^2) + b*x + c，e2就是d*(x^2) + e*x + f</span></span><br><span class="line">                    <span class="comment">//...</span></span><br><span class="line">                    <span class="keyword">int</span> 最高阶数 = Math.max(P(x).阶数, Q(x).阶数);</span><br><span class="line">                    Expression e1 = Expression.构建多项式(最高阶数);	</span><br><span class="line">                    Expression e2 = Expression.构建多项式(最高阶数);</span><br><span class="line">                    <span class="comment">//如果两个根都不等于α + βi</span></span><br><span class="line">                    <span class="keyword">if</span>(α + βi != λ<span class="number">1</span> &amp;&amp; α + βi != λ<span class="number">2</span>) &#123;</span><br><span class="line">                        String y_0 = <span class="string">&quot;(e^(α*x))*((e1)*cos(β*x) + (e2)*sin(β*x))&quot;</span>;</span><br><span class="line">                        s.append(String.format(</span><br><span class="line">                            <span class="string">&quot;然后令y_0(x) = %s带回，解出abcd，得到非齐次特解，合起来就是通解&quot;</span>, y_0));</span><br><span class="line">                        <span class="keyword">return</span> s.toString();</span><br><span class="line">                    &#125;</span><br><span class="line">                    <span class="comment">//如果两个根都等于α + βi</span></span><br><span class="line">                    <span class="keyword">if</span>(α + βi == λ<span class="number">1</span> &amp;&amp; α + βi == λ<span class="number">2</span>) &#123;</span><br><span class="line">                        String y_0 = <span class="string">&quot;(x^2)*(e^(α*x))*((e1)*cos(β*x) + (e2)*sin(β*x))&quot;</span>; <span class="comment">//注意前面多了x^2</span></span><br><span class="line">                        s.append(String.format(</span><br><span class="line">                            <span class="string">&quot;然后令y_0(x) = %s带回，解出abcd，得到非齐次特解，合起来就是通解&quot;</span>, y_0));</span><br><span class="line">                        <span class="keyword">return</span> s.toString();</span><br><span class="line">                    &#125;</span><br><span class="line">                    <span class="comment">//剩下的就是两个根只有一个等于α + βi</span></span><br><span class="line">                    String y_0 = <span class="string">&quot;x*(e^(α*x))*((e1)*cos(β*x) + (e2)*sin(β*x))&quot;</span>;	<span class="comment">//注意最前面多了一个x</span></span><br><span class="line">                    s.append(String.format(</span><br><span class="line">                        <span class="string">&quot;然后令y_0(x) = %s带回，解出abcd，得到非齐次特解，合起来就是通解&quot;</span>, y_0));</span><br><span class="line">                    <span class="keyword">return</span> s.toString();</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="comment">//剩下的就是线性变系数的：也分为齐次和非齐次</span></span><br><span class="line">            <span class="comment">//不需要会解，只要能明白解的结构即可</span></span><br><span class="line">            <span class="comment">//齐次：</span></span><br><span class="line">            <span class="keyword">if</span>(方程.c(x).equals(<span class="string">&quot;0&quot;</span>)) &#123;</span><br><span class="line">                System.out.println(<span class="string">&quot;通解公式:y = c_1*φ_1(x) + c_2*φ_2(x)&quot;</span>);</span><br><span class="line">                <span class="keyword">return</span> String.format(</span><br><span class="line">                    <span class="string">&quot;高阶线性变系数齐次方程，找到%d个线性无关的特解，带公式得到通解&quot;</span>, 方程.阶数);</span><br><span class="line">            &#125;</span><br><span class="line">			<span class="comment">//非齐次：除了齐次就是非齐次</span></span><br><span class="line">            System.out.println(<span class="string">&quot;非齐次型方程的通解 = 对应的齐次的通解 + 非齐次的特解&quot;</span>);</span><br><span class="line">            <span class="keyword">return</span> <span class="string">&quot;高阶线性变系数非齐次方程，找到对应的齐次的特解，通过通解公式得到齐次的通解&quot;</span> + </span><br><span class="line">                <span class="string">&quot;然后加入非齐次的特解，合起来就是非齐次通解&quot;</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//二阶往上的方程，由于原理相同，且做题时比较少见，不再列出。</span></span><br><span class="line">        <span class="comment">//（仅列出三阶线性常系数）</span></span><br><span class="line">        <span class="keyword">if</span>(方程.阶数 == <span class="number">3</span>) &#123;</span><br><span class="line">            <span class="keyword">if</span>(方程.a(x).equals(<span class="string">&quot;0&quot;</span>) &amp;&amp; 方程.b(x).equals(<span class="string">&quot;0&quot;</span>)) &#123;	<span class="comment">//是线性常系数的</span></span><br><span class="line">                <span class="comment">//判断是否是齐次的</span></span><br><span class="line">                <span class="keyword">if</span>(方程.c(x).equals(<span class="string">&quot;0&quot;</span>)) &#123;</span><br><span class="line">					Expression 三阶特征方程 = 方程.获取对应的特征方程();</span><br><span class="line">                      <span class="keyword">switch</span>(三阶特征方程.根的情况) &#123;	</span><br><span class="line">                          <span class="keyword">case</span> <span class="string">&quot;λ1, λ2, λ3都是实数且λ1 != λ2 != λ3&quot;</span>:</span><br><span class="line">                              <span class="keyword">return</span> <span class="string">&quot;带三阶公式：对应二阶的case 2&quot;</span>;</span><br><span class="line">                          <span class="keyword">case</span> <span class="string">&quot;λ1, λ2, λ3都是实数，且λ1 = λ2 != λ3&quot;</span>:</span><br><span class="line">                              <span class="keyword">return</span> <span class="string">&quot;带三阶公式。没有对应的二阶&quot;</span>;</span><br><span class="line">                          <span class="keyword">case</span> <span class="string">&quot;λ1, λ2, λ3都是实数，且λ1 = λ2 = λ3&quot;</span>:</span><br><span class="line">                              <span class="keyword">return</span> <span class="string">&quot;带三阶公式：对应二阶的case 1&quot;</span>;</span><br><span class="line">                          <span class="keyword">case</span> <span class="string">&quot;λ1是实数, λ2与λ3共轭&quot;</span>:</span><br><span class="line">                              <span class="keyword">return</span> <span class="string">&quot;带三阶公式，没有对应的二阶&quot;</span>;</span><br><span class="line">                     &#125;</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="comment">//剩下的就是非齐次的（老师没讲）</span></span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">interface</span> 常数值 </span>&#123;</span><br><span class="line">    <span class="comment">//定义常用的常数值</span></span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="keyword">int</span> ERROR = Integer.MIN_VALUE;</span><br><span class="line">    <span class="comment">//省略代码</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Expression</span> <span class="keyword">implements</span> 常数值</span>&#123;</span><br><span class="line">    <span class="comment">//省略代码</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> 微分方程 <span class="keyword">implements</span> 常数值 </span>&#123;</span><br><span class="line">	<span class="keyword">public</span> Expression 表达式;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">int</span> 阶数;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> Expression <span class="title">a</span><span class="params">(x)</span> </span>= ERROR; <span class="comment">//a(x)不一定存在（只有线性的方程存在），因此预先定义为ERROR</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> Expression <span class="title">b</span><span class="params">(x)</span> </span>= ERROR;	<span class="comment">//b(x)不一定存在（只有线性的方程存在），因此预先定义为ERROR</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> Expression <span class="title">c</span><span class="params">(x)</span> </span>= ERROR;	<span class="comment">//c(x)不一定存在（只有线性的方程存在），因此预先定义为ERROR</span></span><br><span class="line">    </span><br><span class="line">    <span class="keyword">public</span> 微分方程(Expression 表达式) &#123;</span><br><span class="line">        <span class="keyword">this</span>.表达式 = 表达式;</span><br><span class="line">        <span class="keyword">this</span>.阶数 = 表达式.最高阶导数的阶数;</span><br><span class="line">        <span class="keyword">this</span>.a(x) = 表达式.a(x);</span><br><span class="line">        <span class="keyword">this</span>.b(x) = 表达式.b(x);</span><br><span class="line">        <span class="keyword">this</span>.c(x) = 表达式.c(x);</span><br><span class="line">    &#125;</span><br><span class="line">	<span class="comment">/**</span></span><br><span class="line"><span class="comment">	 * 判断微分方程是否满足特定要求</span></span><br><span class="line"><span class="comment">	 * <span class="doctag">@param</span> s: 判断条件</span></span><br><span class="line"><span class="comment">	 */</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">is</span><span class="params">(String s)</span> </span>&#123;</span><br><span class="line">		<span class="comment">//省略代码</span></span><br><span class="line">	&#125;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 得到微分方程的特征方程</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">public</span> Expression 获取对应的特征方程() &#123;</span><br><span class="line">        <span class="comment">//省略代码</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Expression</span> </span>&#123;</span><br><span class="line">    <span class="comment">//省略代码</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>考研</category>
+      </categories>
+      <tags>
+        <tag>数学二</tag>
+        <tag>高数</tag>
+        <tag>微分方程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Windows下关闭指定端口号的进程</title>
+    <url>/posts/38420ac9/</url>
+    <content><![CDATA[<p>查看指定端口的使用情况</p>
+<ol>
+<li>使用命令：</li>
+</ol>
+<figure class="highlight 1c"><table><tr><td class="code"><pre><span class="line">netstat -ano <span class="string">| findstr 端口号</span></span><br></pre></td></tr></table></figure>
+<p>查看端口时可能会出现以下两种情况，即倒数第二个参数可能是LISTENING，或者TIME_WAIT ， 当参数为 TIME_WAIT时，表示占用此端口的那个进程正在改变状态，稍等一下可能这个进程就结束了。参数为LISTENING 时，就需要手动关闭这个进程了，最后一个参数是这个进程的进程号</p>
+<ol>
+<li>运行命令： 执行此命令强制关闭指定进程号的进程</li>
+</ol>
+<figure class="highlight dos"><table><tr><td class="code"><pre><span class="line"><span class="built_in">taskkill</span> -PID 进程号 -F</span><br></pre></td></tr></table></figure>
+<figure class="highlight subunit"><table><tr><td class="code"><pre><span class="line">PS F:\01_blog&gt; netstat -ano | findstr 4000</span><br><span class="line">  TCP    0.0.0.0:4000           0.0.0.0:0              LISTENING       16308</span><br><span class="line">  TCP    [::]:4000              [::]:0                 LISTENING       16308</span><br><span class="line">PS F:\01_blog&gt; taskkill -PID 16308 -F</span><br><span class="line"><span class="keyword">SUCCESS: </span>The process with PID 16308 has been terminated.</span><br><span class="line">PS F:\01_blog&gt;</span><br></pre></td></tr></table></figure>
+<p>参考：<a href="https://blog.csdn.net/eagleuniversityeye/article/details/79985027">https://blog.csdn.net/eagleuniversityeye/article/details/79985027</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>今天是博客的第二天</title>
+    <url>/posts/9aa223c3/</url>
+    <content><![CDATA[<p>上午遇到了各种各样的bug，就是测试不出来是怎么回事，最终的结论是不要折腾了。</p>
+<h2 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h2><p>2020-04-21这一天，我终于拥有了自己的博客。虽然十分简陋，但是我想对我自己来说是一个很大的提升。下一步我想把我知乎上之前写过的文章全部搬到github上面，从此摆脱知乎的文章审核与删除风险。</p>
+<h2 id="第二章"><a href="#第二章" class="headerlink" title="第二章"></a>第二章</h2><p>good</p>
+]]></content>
+      <categories>
+        <category>java</category>
+      </categories>
+      <tags>
+        <tag>随笔</tag>
+        <tag>19970629</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>关于hexo如何在多终端下编辑的测试</title>
+    <url>/posts/dc3ac968/</url>
+    <content><![CDATA[<p>这个测试是为了测试在本地删除master分支的基础上，还能否正常推送</p>
+<p>结果是可以正常推送。因此本地只要留一个sources分支即可，本地可删除master分支</p>
+<p>然后sources用于保存源代码到github上</p>
+<p>顺便测试一下图片能否正常显示：</p>
+<a id="more"></a>
+<p><img src="https://cdn.jsdelivr.net/gh/ysl970629/public_picture_bed_01@latest//img/20200421172021.png" alt="abab"></p>
+<p>测试角标与加载</p>
+<p>测试数学公式：</p>
+<script type="math/tex; mode=display">
+\operatorname{UCT}\left(v_{i}, v\right)=\frac{Q\left(v_{i}\right)}{N\left(v_{i}\right)}+c \sqrt{\frac{\log (N(v))}{N\left(v_{i}\right)}}</script><p>测试链接：</p>
+<p><a href="http://www.baidu.com">百度</a> </p>
+<a href="#">Post not found: 测试文章题目</a>
+]]></content>
+      <tags>
+        <tag>随笔</tag>
+        <tag>测试文章</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>常用的文章链接</title>
+    <url>/posts/3157ddc2/</url>
+    <content><![CDATA[<p><a href="https://zhuanlan.zhihu.com/p/112963342">开发环境配置</a> </p>
+]]></content>
+      <categories>
+        <category>笔记</category>
+      </categories>
+      <tags>
+        <tag>笔记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>我的小破站</title>
+    <url>/posts/31e84e83/</url>
+    <content><![CDATA[<p>| <a href="https://github.com/ysl970629/ysl970629.github.io/blob/sources/doc/en.md">English Document</a> | 中文文档 |</p>
+<p><a href="https://travis-ci.com/ysl970629/ysl970629.github.io"><img src="https://travis-ci.com/ysl970629/ysl970629.github.io.svg?branch=sources" alt="Build Status"></a></p>
+<hr>
+<p><a href="https://ysl970629.github.io/"><img src="https://pic1.zhimg.com/v2-7bbacf738f80594ebd62180f60175547_xs.jpg" alt="YuSLi"></a></p>
+<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>我的英语水平比较差，但是我尽量表达清楚。</p>
+<p>如果想浏览博客，请移步：<a href="https://ysl970629.github.io/">ysl970629.github.io</a></p>
+<p>在开始项目前，我用了两天时间学习<a href="https://zhuanlan.zhihu.com/p/131615378">git</a>命令。此项目用时两天半，其中有半天时间，我在<a href="https://zhuanlan.zhihu.com/p/133856067">搭建个人图床</a>。</p>
+<p>关于如何搭建静态博客，请移步我的知乎文章：<a href="https://zhuanlan.zhihu.com/p/133861531">https://zhuanlan.zhihu.com/p/133861531</a> </p>
+<a id="more"></a>
+<h2 id="实现方式"><a href="#实现方式" class="headerlink" title="实现方式"></a>实现方式</h2><ul>
+<li>Github Page：渲染指定的仓库中的内容</li>
+<li>Hexo框架：静态博客框架，基于node.js</li>
+<li>Next主题：Hexo的主题，用于美化</li>
+<li>Travis CI：用于自动部署</li>
+</ul>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>之前一直在知乎上写文章与做笔记，但是知乎老是审核我的文章，令我很不舒服。因此我才打算搭建个人博客。</p>
+<p>搭建过程还是有些曲折，其中执行<a href="https://www.bilibili.com/video/BV1Yb411a7ty">hexo</a>命令的时候，老是由于node.js版本太高（高于v12）而出现循环依赖(circular dependency)问题。</p>
+<p><a href="https://www.bilibili.com/video/BV16W411t7mq">博客的美化过程</a>也因为网页渲染需要时间，没法实时预览效果，比较耽误时间。</p>
+<p>最后的Travis CI那一步更是令我头大，网上各种各样的配置方法都有，最终我还是找到了<a href="https://zhuanlan.zhihu.com/p/94560382">适合自己的配置方法</a>，才成功配置上。</p>
+<p>虽然过程很艰辛，但是最终我还是成功的做出了小破站，也达到了我的预期目标。这个网站建设总用时两天半，但是我这两天经常熬到晚上两点多才睡觉。还是自己亲手做的东西才有感情。</p>
+<p>最后，十分感谢对于此项目中帮助过我的人，虽然我甚至都没有向他们提问过问题，但是通过他们的文章，或者视频，我也能获益匪浅，少走很多弯路。</p>
+<h2 id="展望："><a href="#展望：" class="headerlink" title="展望："></a>展望：</h2><p>在后续版本中，我会加入<a href="https://zhuanlan.zhihu.com/p/34065149">GitHub与Coding.net的双部署</a>，这样可以实现国内外分流。并且尽量美化一下我的博客，让它看着更舒服一点。再就是加入数学公式和一些其他插件。</p>
+<p>不过最近比较忙，可能会很久之后才行动吧。</p>
+]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>随笔</tag>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>测试Travis CI自动部署</title>
+    <url>/posts/fa2aec1e/</url>
+    <content><![CDATA[<p>随便写点东西上传，看看Travis CI有没有自动部署。刚才测试发现丢包现象。因此上传一次看一下变化。</p>
+<p>2020-04-26 测试双部署</p>
+<p>第二次测试</p>
+<p>第三次测试</p>
+<a href="/posts/31e84e83/" title="我的小破站">我的小破站</a>
+<a id="more"></a>
+<p><img src="https://cdn.jsdelivr.net/gh/ysl970629/public_picture_bed_01@latest/img/20200423140351.png" alt="图片"></p>
+]]></content>
+      <categories>
+        <category>测试</category>
+      </categories>
+      <tags>
+        <tag>Travis CI</tag>
+      </tags>
+  </entry>
+</search>
