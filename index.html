@@ -1,1 +1,349 @@
-Hello world!
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>于松黎 - 博士生简历</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Noto Sans SC', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1a237e, #283593);
+            color: white;
+            padding: 30px 40px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .personal-info h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .contact-info {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+
+        .contact-info p {
+            margin: 5px 0;
+        }
+
+        .section {
+            background: white;
+            border-radius: 10px;
+            padding: 25px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+
+        .section-title {
+            color: #1a237e;
+            font-size: 24px;
+            padding-bottom: 12px;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #5c6bc0;
+            font-weight: 600;
+        }
+
+        .intro-content {
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
+        .timeline {
+            position: relative;
+            padding-left: 20px;
+        }
+
+        .timeline:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 5px;
+            bottom: 5px;
+            width: 4px;
+            background: #5c6bc0;
+            border-radius: 2px;
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 25px;
+            padding-left: 20px;
+        }
+
+        .timeline-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .timeline-item:before {
+            content: '';
+            position: absolute;
+            left: -8px;
+            top: 8px;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background: #3949ab;
+            border: 3px solid #c5cae9;
+        }
+
+        .timeline-period {
+            font-weight: 700;
+            color: #1a237e;
+            font-size: 17px;
+            margin-bottom: 5px;
+        }
+
+        .timeline-title {
+            font-weight: 600;
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+
+        .project-item, .achievement-item, .award-item {
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px dashed #e0e0e0;
+        }
+
+        .project-item:last-child, .achievement-item:last-child, .award-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .project-title {
+            font-weight: 600;
+            font-size: 18px;
+            color: #1a237e;
+            margin-bottom: 8px;
+        }
+
+        .project-period {
+            color: #666;
+            font-style: italic;
+            margin-bottom: 10px;
+        }
+
+        .project-desc {
+            padding-left: 15px;
+        }
+
+        .project-desc li {
+            margin-bottom: 8px;
+            list-style-type: square;
+        }
+
+        .skill-category {
+            margin-bottom: 20px;
+        }
+
+        .skill-title {
+            font-weight: 600;
+            font-size: 18px;
+            color: #1a237e;
+            margin-bottom: 8px;
+        }
+
+        .skill-items {
+            padding-left: 15px;
+        }
+
+        .skill-items li {
+            margin-bottom: 8px;
+            list-style-type: circle;
+        }
+
+        .highlight {
+            background: linear-gradient(to bottom, transparent 60%, #e3f2fd 60%);
+            font-weight: 500;
+        }
+
+        .tag {
+            display: inline-block;
+            background: #e3f2fd;
+            color: #1a237e;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 14px;
+            margin-right: 5px;
+            margin-top: 5px;
+            font-weight: 500;
+        }
+
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .contact-info {
+                margin-top: 20px;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="personal-info">
+                <h1>于松黎</h1>
+                <p>全日制博士生申请</p>
+            </div>
+            <div class="contact-info">
+                <p>邮箱: songliyu97@gmail.com</p>
+                <p>电话: 13012996813</p>
+                <p>出生年月: 1997年6月</p>
+            </div>
+        </div>
+    </header>
+
+    <section class="section">
+        <h2 class="section-title">个人简介</h2>
+        <div class="intro-content">
+            <p>于松黎，男，1997年6月出生于山东省威海市。2020年6月毕业于山东财经大学"计算机科学与技术"专业，获工学学士学位。2024年6月毕业于山东大学"通信工程"专业，获电子信息硕士学位。研究方向为医学图像处理。</p>
+            <p>读研期间，以第一作者在SCI期刊发表学术论文1篇，合作申请国家发明专利1件，以第一作者申请国家软件著作权1件；获得2023年"中国软件杯"第12届大学生软件设计大赛全国二等奖、东部赛区一等奖、2022年"中国光谷·华为杯"第19届中国研究生数学建模竞赛全国三等奖、2021年"华为杯"第18届中国研究生数学建模竞赛全国三等奖等奖励和荣誉。现任职腾讯云原生测试开发工程师。</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2 class="section-title">教育经历</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-period">2021-09 ~ 2024-06</div>
+                <div class="timeline-title">山东大学，电子信息硕士学位</div>
+                <p>专业：通信工程</p>
+                <p>导师：颜成钢教授，合作导师：王帅研究员</p>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-period">2016-09 ~ 2020-07</div>
+                <div class="timeline-title">山东财经大学，工学学士学位</div>
+                <p>专业：计算机科学与技术</p>
+                <p>导师：赵志崑副教授</p>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-period">2016-09 ~ 2020-07</div>
+                <div class="timeline-title">山东财经大学，经济学学士学位（辅修）</div>
+                <p>专业：金融学</p>
+                <p>导师：王荣教授</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2 class="section-title">项目经历</h2>
+        <div class="project-item">
+            <div class="project-title">基于深度学习的食道肿瘤CT图像分割算法研究</div>
+            <div class="project-period">2021/09-2024/06 | 山东大学智能信息处理实验室、四川肿瘤医院合作项目</div>
+            <ul class="project-desc">
+                <li>针对食道癌放疗中CT图像肿瘤区域(GTV)分割的临床需求，研究解决复杂结构、模糊边界和小目标分割的精度不足问题</li>
+                <li>提出长距离中继机制(LRRM)、双分支ViT模块(DualFast/AxialViT)，在1665例临床数据上实现Dice系数提升0.83%</li>
+                <li>设计构建两阶段医学图像分割可视化与智能诊断工具，支持参数配置与结果对比、3D渲染与多平面重建与临床工作流集成</li>
+            </ul>
+        </div>
+        <div class="project-item">
+            <div class="project-title">基于Monte Carlo方法的五子棋算法设计与实现</div>
+            <div class="project-period">2019/12-2020/05 | 山东财经大学毕业论文</div>
+            <ul class="project-desc">
+                <li>针对五子棋AI算法设计与优化的研究需求，研究解决传统权值法局部最优和极小极大算法依赖领域知识的问题</li>
+                <li>提出基于蒙特卡洛树搜索(MCTS)的博弈树构建方法，结合上限置信区间(UCB)算法平衡探索与利用，实现智能度显著提升</li>
+                <li>设计构建MCTS-UCB五子棋人机对弈系统，支持动态参数配置(模拟次数/奖励机制)、实时进度反馈及多维度棋盘适配</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2 class="section-title">学术成果</h2>
+        <div class="achievement-item">
+            <p><span class="highlight">[1] Yu S, Li Y, Jiao P,et al.</span> A CNN-transformer-based hybrid U-shape model with long-range relay for esophagus 3D CT image gross tumor volume segmentation[J]. Medical Physics,2025. <span class="tag">SCI JCR Q1</span> <span class="tag">第一作者</span> <span class="tag">已录用</span></p>
+        </div>
+        <div class="achievement-item">
+            <p><span class="highlight">[2] 王帅,于松黎,王奇峰,等.</span> 基于深度学习的食道癌CT图像的分割方法[P]. 申请号:CN202410261439.3, 申请日:2024-03-07, 公开日:2024-07-16，国家知识产权局. <span class="tag">发明专利</span> <span class="tag">学生一作</span> <span class="tag">公开实审</span></p>
+        </div>
+        <div class="achievement-item">
+            <p><span class="highlight">[3] 于松黎.</span> 蒙特卡洛五子棋V1.0[CP]. 授权号:2024SR0911879, 授权日:2024-07-02, 国家版权局. <span class="tag">软件著作权</span> <span class="tag">第一作者</span> <span class="tag">已授权</span></p>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2 class="section-title">证书奖项</h2>
+        <div class="award-item">
+            <p><span class="highlight">[1] 2023-08:</span> 2023年"中国软件杯"第12届大学生软件设计大赛全国二等奖、东部赛区一等奖 <span class="tag">国家级竞赛奖项</span></p>
+        </div>
+        <div class="award-item">
+            <p><span class="highlight">[2] 2023-01:</span> 2022年"中国光谷·华为杯"第19届中国研究生数学建模竞赛全国三等奖 <span class="tag">国家级竞赛奖项</span></p>
+        </div>
+        <div class="award-item">
+            <p><span class="highlight">[3] 2021-12:</span> 2021年"华为杯"第18届中国研究生数学建模竞赛全国三等奖 <span class="tag">国家级竞赛奖项</span></p>
+        </div>
+        <div class="award-item">
+            <p><span class="highlight">[4]</span> 大学英语四级(498分)、大学英语六级(454分)</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2 class="section-title">工作经历</h2>
+        <div class="timeline-item">
+            <div class="timeline-period">2024/07-至今</div>
+            <div class="timeline-title">腾讯科技(成都)有限公司 - CSIG质量部 - 云原生测试开发工程师</div>
+            <ul class="project-desc">
+                <li>针对Kubernetes集群部署架构和组件版本的验收与巡检需求，设计解决环境监控覆盖不足、传统脚本线性执行耗时问题</li>
+                <li>设计构建异步化验收引擎(基于Asyncio协程调度框架)，扩充200+部署校验项，并将部署验收时长由10分钟压缩至3秒</li>
+                <li>设计多架构自适应巡检框架(x86/ARM双指令集动态加载)，合并专有云/公有云集群指标采集协议，覆盖500+集群高可用监控</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2 class="section-title">专业技能</h2>
+        <div class="skill-category">
+            <div class="skill-title">医学影像智能分析</div>
+            <p>具备医学影像算法研究能力，精通Transformer与CNN混合架构设计，擅长解决小目标分割、边界模糊等复杂问题</p>
+        </div>
+        <div class="skill-category">
+            <div class="skill-title">深度学习算法设计</div>
+            <ul class="skill-items">
+                <li>精通PyTorch生态技术栈，掌握模型调优全流程(数据增强/特征融合/迁移学习)，具备算法工程化经验</li>
+                <li>熟悉智能决策算法开发，掌握蒙特卡洛树搜索等优化方法在跨领域场景的应用</li>
+                <li>熟练使用Python数据科学工具链(Pandas/NumPy/Matplotlib)，具备多维度结果可视化能力</li>
+            </ul>
+        </div>
+        <div class="skill-category">
+            <div class="skill-title">云原生工程建设</div>
+            <ul class="skill-items">
+                <li>掌握Kubernetes多架构集群管理，具备高可用系统设计能力(负载均衡/故障转移)</li>
+                <li>熟悉容器化DevOps全流程(CI/CD编排)、自动化监控告警解决方案</li>
+                <li>精通Linux开发环境配置，擅长Golang/Python开发、Shell脚本编写与效能工具链优化</li>
+            </ul>
+        </div>
+    </section>
+</body>
+</html>
