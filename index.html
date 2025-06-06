@@ -29,12 +29,17 @@
             border-radius: 10px;
             margin-bottom: 30px;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            position: relative;
         }
 
         .header-content {
             display: flex;
             justify-content: space-between;
-            align-items: center;
+            align-items: flex-start;
+        }
+
+        .personal-info {
+            flex: 1;
         }
 
         .personal-info h1 {
@@ -48,10 +53,38 @@
             padding: 15px;
             border-radius: 8px;
             font-size: 16px;
+            margin-top: 10px;
         }
 
         .contact-info p {
             margin: 5px 0;
+        }
+
+        .photo-container {
+            margin-left: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .photo-placeholder {
+            width: 140px;
+            height: 180px;
+            background-color: #e3f2fd;
+            border: 2px dashed #5c6bc0;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #5c6bc0;
+            font-size: 14px;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .photo-placeholder::before {
+            content: "证件照位置";
+            display: block;
         }
 
         .section {
@@ -208,6 +241,10 @@
                 margin-top: 20px;
                 width: 100%;
             }
+
+            .photo-container {
+                margin: 20px auto 0;
+            }
         }
     </style>
 </head>
@@ -217,11 +254,14 @@
             <div class="personal-info">
                 <h1>于松黎</h1>
                 <p>全日制博士生申请</p>
+                <div class="contact-info">
+                    <p>邮箱: songliyu97@gmail.com</p>
+                    <p>电话: 13012996813</p>
+                    <p>出生年月: 1997年6月</p>
+                </div>
             </div>
-            <div class="contact-info">
-                <p>邮箱: songliyu97@gmail.com</p>
-                <p>电话: 13012996813</p>
-                <p>出生年月: 1997年6月</p>
+            <div class="photo-container">
+                <div class="photo-placeholder"></div>
             </div>
         </div>
     </header>
