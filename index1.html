@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Songli Yu - Resume</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .resume-container {
+            background-color: white;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            padding: 30px;
+            border-radius: 8px;
+        }
+        .header {
+            text-align: center;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #3498db;
+            margin-bottom: 25px;
+        }
+        .name {
+            font-size: 32px;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+        .contact-info {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 15px;
+        }
+        .section {
+            margin-bottom: 25px;
+        }
+        .section-title {
+            font-size: 22px;
+            font-weight: bold;
+            color: #2980b9;
+            margin-bottom: 15px;
+            padding-bottom: 5px;
+            border-bottom: 1px solid #eaeaea;
+        }
+        .subsection {
+            margin-bottom: 20px;
+        }
+        .subsection-title {
+            font-weight: bold;
+            font-size: 18px;
+            color: #2c3e50;
+            margin-bottom: 8px;
+        }
+        .date {
+            color: #7f8c8d;
+            font-style: italic;
+            margin-bottom: 5px;
+        }
+        .item {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            position: relative;
+        }
+        .item:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #3498db;
+        }
+        .skills-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .skill-category {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+            border-left: 4px solid #3498db;
+        }
+        .skill-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+        @media print {
+            body {
+                background-color: white;
+            }
+            .resume-container {
+                box-shadow: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="resume-container">
+        <div class="header">
+            <div class="name">SONGLI YU</div>
+            <div class="contact-info">
+                Phone: 13012996813 | Email: songliyu97@gmail.com
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Personal Profile</div>
+            <p>Songli Yu, male, born in June 1997 in Weihai, Shandong Province. Graduated with a Bachelor of Engineering in Computer Science and Technology from Shandong University of Finance and Economics in June 2020. Obtained a Master's degree in Electronic Information (Communication Engineering) from Shandong University in June 2024. Research focus on medical image processing.</p>
+            <p>During graduate studies, published one SCI journal paper as first author, co-applied for one national invention patent, and applied for one national software copyright as first author. Received several awards including National Second Prize in the 12th "China Software Cup" College Student Software Design Competition (2023), East China Division First Prize, National Third Prize in the 19th "China Optics Valley · Huawei Cup" China Graduate Mathematical Contest in Modeling (2022), and National Third Prize in the 18th "Huawei Cup" China Graduate Mathematical Contest in Modeling (2021). Currently employed as a Cloud Native Test Development Engineer at Tencent.</p>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Education</div>
+            <div class="subsection">
+                <div class="subsection-title">Shandong University</div>
+                <div class="date">Sep 2021 - Jun 2024</div>
+                <div>Master of Electronic Information (Communication Engineering)</div>
+                <div>Supervisor: Prof. Chenggang Yan | Co-supervisor: Researcher Shuai Wang</div>
+            </div>
+            <div class="subsection">
+                <div class="subsection-title">Shandong University of Finance and Economics</div>
+                <div class="date">Sep 2016 - Jul 2020</div>
+                <div>Bachelor of Engineering in Computer Science and Technology</div>
+                <div>Supervisor: Associate Prof. Zhikun Zhao</div>
+            </div>
+            <div class="subsection">
+                <div class="subsection-title">Shandong University of Finance and Economics</div>
+                <div class="date">Sep 2016 - Jul 2020</div>
+                <div>Bachelor of Economics in Finance (Minor)</div>
+                <div>Supervisor: Prof. Rong Wang</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Project Experience</div>
+            <div class="subsection">
+                <div class="subsection-title">Deep Learning-based CT Image Segmentation Algorithm for Esophageal Tumors</div>
+                <div>(Collaborative Project: Shandong University Intelligent Information Processing Lab & Sichuan Cancer Hospital)</div>
+                <ul>
+                    <li class="item">Addressed clinical needs for esophageal cancer radiotherapy CT image tumor region (GTV) segmentation, solving accuracy issues with complex structures, blurred boundaries, and small targets</li>
+                    <li class="item">Proposed Long-Range Relay Mechanism (LRRM) and Dual-Branch ViT Module (Dual Fast/Axial ViT), achieving 0.83% Dice coefficient improvement on 1,665 clinical cases</li>
+                    <li class="item">Designed and implemented a two-stage medical image segmentation visualization and intelligent diagnosis tool with parameter configuration, result comparison, 3D rendering, multi-planar reconstruction, and clinical workflow integration</li>
+                </ul>
+            </div>
+            <div class="subsection">
+                <div class="subsection-title">Monte Carlo-based Gobang Algorithm Design and Implementation</div>
+                <div>(Shandong University of Finance and Economics Graduation Project)</div>
+                <ul>
+                    <li class="item">Addressed research needs for Gobang AI algorithm design and optimization, solving issues of local optima in traditional weighting methods and domain knowledge dependency in minimax algorithms</li>
+                    <li class="item">Proposed Monte Carlo Tree Search (MCTS) game tree construction method combined with Upper Confidence Bound (UCB) algorithm to balance exploration and exploitation, achieving significant intelligence improvement</li>
+                    <li class="item">Designed and implemented an MCTS-UCB Gobang human-computer gaming system supporting dynamic parameter configuration (simulation count/reward mechanism), real-time progress feedback, and multi-dimensional board adaptation</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Academic Achievements</div>
+            <ul>
+                <li class="item"><strong>[1]</strong> Yu S., Li Y., Jiao P., et al. <em>A CNN‐transformer‐based hybrid U‐shape model with long‐range relay for esophagus 3D CT image gross tumor volume segmentation</em>. Medical Physics, 2025. (SCI JCR Q1, First Author, Accepted)</li>
+                <li class="item"><strong>[2]</strong> Wang S., <strong>Yu S.</strong>, Wang Q., et al. <em>Deep Learning-based Segmentation Method for Esophageal Cancer CT Images</em> [P]. Application No.: CN202410261439.3, Filing Date: 2024-03-07, Publication Date: 2024-07-16, China National Intellectual Property Administration. (Invention Patent, Student First Author, Published & Under Substantive Examination)</li>
+                <li class="item"><strong>[3]</strong> Yu S. (Software Copyright, First Author, Authorized)</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Certificates & Awards</div>
+            <ul>
+                <li class="item">Aug 2023: National Second Prize & East China Division First Prize, 12th "China Software Cup" College Student Software Design Competition (National Competition Award)</li>
+                <li class="item">Jan 2023: National Third Prize, 19th "China Optics Valley · Huawei Cup" China Graduate Mathematical Contest in Modeling (National Competition Award)</li>
+                <li class="item">Dec 2021: National Third Prize, 18th "Huawei Cup" China Graduate Mathematical Contest in Modeling (National Competition Award)</li>
+                <li class="item">CET-4 (498), CET-6 (454)</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Work Experience</div>
+            <div class="subsection">
+                <div class="subsection-title">Tencent Technology (Chengdu) Co., Ltd. - CSIG Quality Department - Cloud Native Test Development Engineer</div>
+                <div class="date">Jul 2024 - Present</div>
+                <ul>
+                    <li class="item">Addressed Kubernetes cluster deployment architecture and component version verification and inspection needs, solving issues of insufficient environment monitoring coverage and time consumption of traditional linear script execution</li>
+                    <li class="item">Designed and implemented an asynchronous verification engine (based on Asyncio coroutine scheduling framework), expanding 200+ deployment validation items and reducing deployment verification time from 10 minutes to 3 seconds</li>
+                    <li class="item">Designed a multi-architecture adaptive inspection framework (x86/ARM dual instruction set dynamic loading), merging dedicated cloud/public cloud cluster metric collection protocols to cover 500+ cluster high-availability monitoring</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Professional Skills</div>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <div class="skill-title">Medical Imaging Intelligent Analysis</div>
+                    <ul>
+                        <li class="item">Medical imaging algorithm research capabilities, proficient in Transformer and CNN hybrid architecture design, skilled in solving complex problems such as small target segmentation and boundary blurring</li>
+                        <li class="item">Mastery of 3D medical imaging full-stack technology (DICOM parsing/model deployment validation/quantitative evaluation), familiar with professional tool integration (e.g., ITK-SNAP) and medical imaging middleware development</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-title">Deep Learning Algorithm Design</div>
+                    <ul>
+                        <li class="item">Proficient in PyTorch ecosystem, mastering full-cycle model optimization (data augmentation/feature fusion/transfer learning), with algorithm engineering experience</li>
+                        <li class="item">Familiar with intelligent decision algorithm development, mastering optimization methods like Monte Carlo Tree Search in cross-domain scenarios</li>
+                        <li class="item">Proficient with Python data science tools (Pandas/NumPy/Matplotlib), capable of multi-dimensional result visualization</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-title">Cloud-Native Engineering</div>
+                    <ul>
+                        <li class="item">Mastery of Kubernetes multi-architecture cluster management, with high-availability system design capabilities (load balancing/failover)</li>
+                        <li class="item">Familiar with containerized DevOps workflow (CI/CD orchestration) and automated monitoring/alerting solutions</li>
+                        <li class="item">Proficient in Linux development environment configuration, skilled in Golang/Python development, Shell scripting, and efficiency toolchain optimization</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
