@@ -1,0 +1,50 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {%- seo title=false -%}
+  <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
+  {%- feed_meta -%}
+  {%- if jekyll.environment == 'production' and site.google_analytics -%}
+    {%- include google-analytics.html -%}
+  {%- endif -%}
+
+  <script defer src="{{ '/assets/js/endpoint-utils.js' | relative_url }}"></script>
+  <script defer src="{{ '/assets/js/time-localizer.js' | relative_url }}"></script>
+  <script defer src="{{ '/assets/js/language-router.js' | relative_url }}"></script>
+
+  <script>
+    (function () {
+      function loadMathJax() {
+        if (window.MathJax) return;
+
+        window.MathJax = {
+          tex: {
+            inlineMath: [['$', '$'], ['\\(', '\\)']]
+          }
+        };
+
+        var script = document.createElement('script');
+        script.id = 'MathJax-script';
+        script.async = true;
+        script.src = 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
+        document.head.appendChild(script);
+      }
+
+      function shouldLoadMathJax() {
+        var root = document.querySelector('.post-content, .page-content');
+        if (!root) return false;
+        var text = root.textContent || '';
+        return /\$\$|\\\(|\\\[/.test(text);
+      }
+
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', function () {
+          if (shouldLoadMathJax()) loadMathJax();
+        }, { once: true });
+      } else if (shouldLoadMathJax()) {
+        loadMathJax();
+      }
+    })();
+  </script>
+</head>
