@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="620" viewBox="0 0 1400 620">
+  <defs>
+    <style>
+      .bg { fill: #111418; }
+      .title { fill: #f3f4f6; font: 700 42px 'SF Pro Display', 'PingFang SC', sans-serif; }
+      .sub { fill: #c7ccd7; font: 500 23px 'SF Pro Display', 'PingFang SC', sans-serif; }
+      .barbg { fill: #0f1115; stroke: #2a2f3b; stroke-width: 2; }
+      .left { fill: #938aa9; }
+      .leftPrefix { fill: #ffa066; }
+      .tabActive { fill: #54546d; }
+      .tabNormal { fill: transparent; }
+      .txtDark { fill: #1e1e2e; font: 700 24px 'SF Mono', 'Menlo', monospace; }
+      .txtLight { fill: #dcd7ba; font: 700 24px 'SF Mono', 'Menlo', monospace; }
+      .note { fill: #9fb0d0; font: 500 22px 'SF Pro Display', 'PingFang SC', sans-serif; }
+    </style>
+  </defs>
+  <rect class="bg" width="1400" height="620"/>
+  <text class="title" x="70" y="85">状态栏结构拆解 / Status Bar Anatomy</text>
+  <text class="sub" x="70" y="125">我这套状态栏配置强调“当前上下文”而非系统监控噪声 / I optimize for context, not monitoring noise.</text>
+
+  <rect class="barbg" x="70" y="180" width="1260" height="90" rx="10"/>
+  <rect class="left" x="90" y="200" width="190" height="50" rx="8"/>
+  <text class="txtDark" x="112" y="233">#S</text>
+  <rect class="leftPrefix" x="285" y="200" width="120" height="50" rx="8"/>
+  <text class="txtDark" x="306" y="233">前缀 / Prefix</text>
+
+  <rect class="tabActive" x="440" y="200" width="260" height="50" rx="8"/>
+  <text class="txtLight" x="465" y="233">#I #W#F</text>
+  <rect class="tabNormal" x="720" y="200" width="230" height="50" rx="8"/>
+  <text class="txtLight" x="735" y="233">#I #W#F</text>
+
+  <text class="note" x="90" y="345">- status-interval 1：反馈更及时 / Faster feedback for prefix state and window flags.</text>
+  <text class="note" x="90" y="390">- status-right 置空：减少噪声 / Empty status-right to preserve attention for workspace context.</text>
+  <text class="note" x="90" y="435">- current 与 normal 同结构：只用颜色区分 / Same structure, color-only focus distinction.</text>
+  <text class="note" x="90" y="480">- pane-border-format + #T：命名可视化 / Pane titles become visible and actionable.</text>
+</svg>

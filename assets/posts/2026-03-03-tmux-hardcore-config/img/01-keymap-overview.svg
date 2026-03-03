@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="820" viewBox="0 0 1400 820">
+  <defs>
+    <style>
+      .bg { fill: #0f1115; }
+      .card { fill: #171a21; stroke: #2c3240; stroke-width: 2; rx: 14; }
+      .title { fill: #f5f7ff; font: 700 44px 'SF Pro Display', 'PingFang SC', sans-serif; }
+      .sub { fill: #b9c1d9; font: 500 24px 'SF Pro Display', 'PingFang SC', sans-serif; }
+      .h { fill: #ffd166; font: 700 30px 'SF Pro Display', 'PingFang SC', sans-serif; }
+      .t { fill: #dbe2ff; font: 500 23px 'SF Mono', 'Menlo', monospace; }
+      .k { fill: #8ecae6; font: 700 24px 'SF Mono', 'Menlo', monospace; }
+    </style>
+  </defs>
+  <rect class="bg" x="0" y="0" width="1400" height="820"/>
+  <text class="title" x="70" y="85">按键总览 / Tmux Keymap Overview</text>
+  <text class="sub" x="70" y="125">我的配置不是“改个 prefix”这么简单，而是整套操作流重排 / This is a full workflow remap, not just a new prefix.</text>
+
+  <rect class="card" x="70" y="170" width="610" height="280"/>
+  <text class="h" x="100" y="225">窗口 / 面板动作 / Window-Pane Actions</text>
+  <text class="k" x="100" y="275">C-a c / g</text><text class="t" x="280" y="275">新建窗口（继承当前路径） / New window (inherit cwd)</text>
+  <text class="k" x="100" y="315">C-a v / s</text><text class="t" x="280" y="315">水平/垂直分屏（继承当前路径） / Split H/V (inherit cwd)</text>
+  <text class="k" x="100" y="355">C-a h j k l</text><text class="t" x="280" y="355">vim 方向切 pane / Vim-style pane navigation</text>
+  <text class="k" x="100" y="395">C-a &lt; - = &gt;</text><text class="t" x="280" y="395">按 5 列/行粒度调整 pane / Resize by fixed 5-step units</text>
+
+  <rect class="card" x="720" y="170" width="610" height="280"/>
+  <text class="h" x="750" y="225">重排 / 跳转 / Reorder &amp; Jump</text>
+  <text class="k" x="750" y="275">C-a C-j / C-k</text><text class="t" x="980" y="275">swap-pane 上下交换 / Swap pane up/down</text>
+  <text class="k" x="750" y="315">C-a C-s</text><text class="t" x="980" y="315">swap-window 到目标索引 / Swap window to target index</text>
+  <text class="k" x="750" y="355">C-a C-g</text><text class="t" x="980" y="355">调用脚本做“插入窗口” / Run insert-window script</text>
+  <text class="k" x="750" y="395">C-a C-w / C-p</text><text class="t" x="980" y="395">last-window / last-pane / 上一窗口与上一面板</text>
+
+  <rect class="card" x="70" y="490" width="1260" height="250"/>
+  <text class="h" x="100" y="545">复制 / 终端兼容增强 / Copy &amp; Compatibility</text>
+  <text class="k" x="100" y="595">copy-mode: v / C-v / y</text><text class="t" x="520" y="595">普通/矩形选区并复制退出 / Normal-rect select then copy &amp; exit</text>
+  <text class="k" x="100" y="635">C-0..C-9 (root key)</text><text class="t" x="520" y="635">手动发 CSI u 转义 / Emit CSI-u sequence for Ctrl+digit</text>
+  <text class="k" x="100" y="675">allow-passthrough on</text><text class="t" x="520" y="675">控制序列穿透 tmux / Let control sequences pass through tmux</text>
+</svg>

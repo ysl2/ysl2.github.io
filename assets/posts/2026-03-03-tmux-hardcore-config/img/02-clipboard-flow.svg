@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="760" viewBox="0 0 1400 760">
+  <defs>
+    <style>
+      .bg { fill: #0b1020; }
+      .node { fill: #172038; stroke: #2e3a63; stroke-width: 2; rx: 16; }
+      .title { fill: #edf2ff; font: 700 42px 'SF Pro Display', 'PingFang SC', sans-serif; }
+      .txt { fill: #d9e0ff; font: 500 24px 'SF Pro Display', 'PingFang SC', sans-serif; }
+      .mono { fill: #9dd9ff; font: 700 24px 'SF Mono', 'Menlo', monospace; }
+      .arrow { stroke: #7aa2ff; stroke-width: 4; fill: none; marker-end: url(#m); }
+    </style>
+    <marker id="m" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#7aa2ff"/>
+    </marker>
+  </defs>
+  <rect class="bg" width="1400" height="760"/>
+  <text class="title" x="70" y="80">跨平台剪贴板管线 / Copy Pipeline</text>
+
+  <rect class="node" x="70" y="140" width="370" height="150"/>
+  <text class="mono" x="95" y="200">copy-mode-vi y</text>
+  <text class="txt" x="95" y="240">copy-pipe-and-cancel</text>
+
+  <rect class="node" x="515" y="140" width="370" height="150"/>
+  <text class="mono" x="540" y="200">tr -d '\r'</text>
+  <text class="txt" x="540" y="240">统一换行行为 / Normalize line endings</text>
+
+  <rect class="node" x="960" y="140" width="370" height="150"/>
+  <text class="mono" x="985" y="200">pbcopy | wl-copy</text>
+  <text class="txt" x="985" y="240">xsel | xclip（回退） / fallback</text>
+
+  <path class="arrow" d="M440 215 L515 215"/>
+  <path class="arrow" d="M885 215 L960 215"/>
+
+  <rect class="node" x="70" y="380" width="1260" height="260"/>
+  <text class="txt" x="100" y="445">要点 / Key points:</text>
+  <text class="txt" x="100" y="490">1) 去掉 CR，避免 macOS/Linux 混用时出现 ^M / Strip CR to avoid ^M artifacts across OSes.</text>
+  <text class="txt" x="100" y="535">2) 一条命令覆盖 Darwin+Wayland+X11 / One pipeline for Darwin, Wayland, and X11.</text>
+  <text class="txt" x="100" y="580">3) 鼠标拖选也走同一管线 / Mouse selection uses the same pipeline as keyboard copy.</text>
+</svg>
