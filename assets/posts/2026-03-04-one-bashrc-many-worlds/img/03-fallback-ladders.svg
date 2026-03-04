@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900" role="img" aria-label="Bilingual fallback ladders for tmux and conda">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f3f7fc"/>
+      <stop offset="100%" stop-color="#dde9f7"/>
+    </linearGradient>
+  </defs>
+  <rect width="1400" height="900" fill="url(#bg)"/>
+  <text x="70" y="80" fill="#17344b" font-size="42" font-family="SF Pro Display, PingFang SC, Noto Sans CJK SC, sans-serif" font-weight="700">Fallback Ladders / 退化链路</text>
+  <text x="70" y="120" fill="#365c79" font-size="24" font-family="SF Pro Text, PingFang SC, Noto Sans CJK SC, sans-serif">Keep working even when parts are missing / 某些部件缺失时仍可工作</text>
+
+  <rect x="70" y="170" width="600" height="660" rx="20" fill="#ffffff" stroke="#bfd6ea" stroke-width="3"/>
+  <text x="110" y="225" fill="#16354c" font-size="34" font-family="SF Pro Text, PingFang SC, Noto Sans CJK SC, sans-serif" font-weight="700">tmux path / tmux 链路</text>
+
+  <g font-family="SF Pro Text, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="24">
+    <rect x="110" y="265" width="520" height="86" rx="14" fill="#e7f4ff"/>
+    <text x="138" y="318" fill="#1a4768" font-weight="600">1) lock file exists? / 锁文件存在?</text>
+
+    <rect x="110" y="382" width="520" height="86" rx="14" fill="#e7f4ff"/>
+    <text x="138" y="435" fill="#1a4768" font-weight="600">2) already in TMUX? / 已在 TMUX 内?</text>
+
+    <rect x="110" y="499" width="520" height="86" rx="14" fill="#e7f4ff"/>
+    <text x="138" y="552" fill="#1a4768" font-weight="600">3) use MYTMUX if executable / 优先 MYTMUX</text>
+
+    <rect x="110" y="616" width="520" height="86" rx="14" fill="#e7f4ff"/>
+    <text x="138" y="669" fill="#1a4768" font-weight="600">4) fallback: command tmux / 回退到系统 tmux</text>
+
+    <rect x="110" y="733" width="520" height="66" rx="14" fill="#b7efc5"/>
+    <text x="138" y="775" fill="#1c4f2e" font-weight="700">exec tmux new-session -A -s main</text>
+  </g>
+
+  <rect x="730" y="170" width="600" height="660" rx="20" fill="#ffffff" stroke="#bfd6ea" stroke-width="3"/>
+  <text x="770" y="225" fill="#16354c" font-size="34" font-family="SF Pro Text, PingFang SC, Noto Sans CJK SC, sans-serif" font-weight="700">conda path / conda 链路</text>
+
+  <g font-family="SF Pro Text, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="24">
+    <rect x="770" y="265" width="520" height="86" rx="14" fill="#fff3df"/>
+    <text x="798" y="318" fill="#6b4419" font-weight="600">1) choose MYCONDA / VOCAL fallback</text>
+
+    <rect x="770" y="382" width="520" height="86" rx="14" fill="#fff3df"/>
+    <text x="798" y="435" fill="#6b4419" font-weight="600">2) source conda.sh if exists / 优先 conda.sh</text>
+
+    <rect x="770" y="499" width="520" height="86" rx="14" fill="#fff3df"/>
+    <text x="798" y="552" fill="#6b4419" font-weight="600">3) else run conda shell hook / 否则执行 hook</text>
+
+    <rect x="770" y="616" width="520" height="86" rx="14" fill="#fff3df"/>
+    <text x="798" y="669" fill="#6b4419" font-weight="600">4) hook failed? add bin to PATH / 再退化</text>
+
+    <rect x="770" y="733" width="520" height="66" rx="14" fill="#ffe08a"/>
+    <text x="798" y="775" fill="#5d3a00" font-weight="700">No hard failure / 不硬失败</text>
+  </g>
+
+  <g stroke="#8ab1ce" stroke-width="4">
+    <line x1="370" y1="351" x2="370" y2="382"/>
+    <line x1="370" y1="468" x2="370" y2="499"/>
+    <line x1="370" y1="585" x2="370" y2="616"/>
+    <line x1="990" y1="351" x2="990" y2="382"/>
+    <line x1="990" y1="468" x2="990" y2="499"/>
+    <line x1="990" y1="585" x2="990" y2="616"/>
+  </g>
+</svg>

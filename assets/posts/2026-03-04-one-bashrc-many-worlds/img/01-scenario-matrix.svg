@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="860" viewBox="0 0 1400 860" role="img" aria-label="Bilingual scenario matrix for bashrc design">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a1a2a"/>
+      <stop offset="100%" stop-color="#123550"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f8fbff"/>
+      <stop offset="100%" stop-color="#eaf3fb"/>
+    </linearGradient>
+  </defs>
+  <rect width="1400" height="860" fill="url(#bg)"/>
+  <text x="70" y="84" fill="#ffffff" font-size="42" font-family="SF Pro Display, PingFang SC, Noto Sans CJK SC, sans-serif" font-weight="700">Scenario Matrix / 场景适配矩阵</text>
+  <text x="70" y="124" fill="#b7d6ee" font-size="24" font-family="SF Pro Text, PingFang SC, Noto Sans CJK SC, sans-serif">One config, many execution contexts / 一份配置，多种执行上下文</text>
+
+  <g transform="translate(70,170)">
+    <rect x="0" y="0" width="1260" height="82" rx="14" fill="#1d4f70"/>
+    <text x="30" y="52" fill="#ffffff" font-size="28" font-family="SF Pro Text, PingFang SC, Noto Sans CJK SC, sans-serif" font-weight="600">Context / 场景</text>
+    <text x="380" y="52" fill="#ffffff" font-size="28" font-family="SF Pro Text, PingFang SC, Noto Sans CJK SC, sans-serif" font-weight="600">Gate / 门禁条件</text>
+    <text x="760" y="52" fill="#ffffff" font-size="28" font-family="SF Pro Text, PingFang SC, Noto Sans CJK SC, sans-serif" font-weight="600">Action / 动作策略</text>
+    <text x="1080" y="52" fill="#ffffff" font-size="28" font-family="SF Pro Text, PingFang SC, Noto Sans CJK SC, sans-serif" font-weight="600">Result / 结果</text>
+  </g>
+
+  <g transform="translate(70,270)">
+    <rect x="0" y="0" width="1260" height="102" rx="14" fill="url(#card)"/>
+    <text x="30" y="42" fill="#17344b" font-size="26" font-family="SF Pro Text, PingFang SC, Noto Sans CJK SC, sans-serif" font-weight="600">Interactive terminal / 交互终端</text>
+    <text x="30" y="76" fill="#315066" font-size="22" font-family="SF Pro Text, PingFang SC, Noto Sans CJK SC, sans-serif">TTY + interactive shell</text>
+    <text x="380" y="56" fill="#244962" font-size="22" font-family="SF Pro Text, PingFang SC, Noto Sans CJK SC, sans-serif">[ -t 0 ] and "$-" contains i</text>
+    <text x="760" y="56" fill="#244962" font-size="22" font-family="SF Pro Text, PingFang SC, Noto Sans CJK SC, sans-serif">Load full env + functions + optional auto boot</text>
+    <text x="1080" y="56" fill="#244962" font-size="22" font-family="SF Pro Text, PingFang SC, Noto Sans CJK SC, sans-serif">Fast happy path / 主路径</text>
+  </g>
+
+  <g transform="translate(70,392)">
+    <rect x="0" y="0" width="1260" height="102" rx="14" fill="url(#card)"/>
+    <text x="30" y="42" fill="#17344b" font-size="26" font-family="SF Pro Text, PingFang SC, Noto Sans CJK SC, sans-serif" font-weight="600">Non-interactive shell / 非交互 shell</text>
+    <text x="30" y="76" fill="#315066" font-size="22" font-family="SF Pro Text, PingFang SC, Noto Sans CJK SC, sans-serif">script, cron, background job</text>
+    <text x="380" y="56" fill="#244962" font-size="22" font-family="SF Pro Text, PingFang SC, Noto Sans CJK SC, sans-serif">early return at top gate</text>
+    <text x="760" y="56" fill="#244962" font-size="22" font-family="SF Pro Text, PingFang SC, Noto Sans CJK SC, sans-serif">Skip heavy init / avoid side effects</text>
+    <text x="1080" y="56" fill="#244962" font-size="22" font-family="SF Pro Text, PingFang SC, Noto Sans CJK SC, sans-serif">No pollution / 不污染</text>
+  </g>
+
+  <g transform="translate(70,514)">
+    <rect x="0" y="0" width="1260" height="102" rx="14" fill="url(#card)"/>
+    <text x="30" y="42" fill="#17344b" font-size="26" font-family="SF Pro Text, PingFang SC, Noto Sans CJK SC, sans-serif" font-weight="600">TTY1 local login / 本地 TTY1 登录</text>
+    <text x="30" y="76" fill="#315066" font-size="22" font-family="SF Pro Text, PingFang SC, Noto Sans CJK SC, sans-serif">no SSH + no DISPLAY</text>
+    <text x="380" y="56" fill="#244962" font-size="22" font-family="SF Pro Text, PingFang SC, Noto Sans CJK SC, sans-serif">XDG_VTNR=1 + no GUI env</text>
+    <text x="760" y="56" fill="#244962" font-size="22" font-family="SF Pro Text, PingFang SC, Noto Sans CJK SC, sans-serif">exec MYWAYLAND or exec startx</text>
+    <text x="1080" y="56" fill="#244962" font-size="22" font-family="SF Pro Text, PingFang SC, Noto Sans CJK SC, sans-serif">Auto desktop / 自动入桌面</text>
+  </g>
+
+  <g transform="translate(70,636)">
+    <rect x="0" y="0" width="1260" height="102" rx="14" fill="url(#card)"/>
+    <text x="30" y="42" fill="#17344b" font-size="26" font-family="SF Pro Text, PingFang SC, Noto Sans CJK SC, sans-serif" font-weight="600">Cross-machine override / 多机覆盖</text>
+    <text x="30" y="76" fill="#315066" font-size="22" font-family="SF Pro Text, PingFang SC, Noto Sans CJK SC, sans-serif">localhost.pre / localhost.post</text>
+    <text x="380" y="56" fill="#244962" font-size="22" font-family="SF Pro Text, PingFang SC, Noto Sans CJK SC, sans-serif">Optional file exists check</text>
+    <text x="760" y="56" fill="#244962" font-size="22" font-family="SF Pro Text, PingFang SC, Noto Sans CJK SC, sans-serif">Inject host-specific policy safely</text>
+    <text x="1080" y="56" fill="#244962" font-size="22" font-family="SF Pro Text, PingFang SC, Noto Sans CJK SC, sans-serif">One core config / 单核多态</text>
+  </g>
+</svg>
